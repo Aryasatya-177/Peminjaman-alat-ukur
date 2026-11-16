@@ -1,0 +1,169 @@
+================================================================================
+DOKUMEN KELENGKAPAN PENULISAN LAPORAN / JURNAL PKL
+GAUGEHUB: SISTEM INFORMASI TERINTEGRASI COMPANY PROFILE DAN PEMINJAMAN ALAT QC
+DI PT VUTEQ INDONESIA
+Oleh: Aryasatya Ramadhan (Rekayasa Perangkat Lunak - SMK Telekomunikasi Telesandi)
+================================================================================
+
+
+--------------------------------------------------------------------------------
+BAGIAN 1: DAFTAR GAMBAR
+--------------------------------------------------------------------------------
+
+DAFTAR GAMBAR
+
+Gambar 2.1 Logo PT Vuteq Indonesia ............................................................................ 8
+Gambar 2.2 Struktur Organisasi Siswa PKL di PT Vuteq Indonesia ............................. 10
+Gambar 3.1 Flowchart Pembuatan Aplikasi ................................................................. 14
+Gambar 3.2 Flowchart Admin ....................................................................................... 17
+Gambar 3.3 Flowchart User ........................................................................................... 18
+Gambar 3.4 Flowchart Teknisi ...................................................................................... 20
+Gambar 3.5 DFD (Data Flow Diagram) ........................................................................ 22
+Gambar 3.6 Use Case Diagram ...................................................................................... 23
+Gambar 3.7 Activity Diagram Login Register ................................................................ 24
+Gambar 3.8 Activity Diagram Login .............................................................................. 25
+Gambar 3.9 Activity Diagram Peminjaman .................................................................... 27
+Gambar 3.10 Activity Diagram Pengembalian ............................................................... 28
+Gambar 3.11 Activity Diagram Kondisi Alat ................................................................. 28
+Gambar 3.12 Activity Diagram Repair ........................................................................... 29
+Gambar 3.13 Activity Diagram Pengelolaan Stock ........................................................ 30
+Gambar 3.14 Activity Diagram Manajemen Pengguna .................................................. 31
+Gambar 3.15 Activity Diagram Perpanjangan Peminjaman ........................................... 33
+Gambar 3.16 Activity Diagram Keputusan Admin atas Alat Rusak ................................ 34
+Gambar 3.17 Activity Diagram Pembuatan Laporan ..................................................... 35
+Gambar 3.18 ERD (Entity Relationship Diagram) ........................................................ 36
+Gambar 3.19 Tabel Users .............................................................................................. 37
+Gambar 3.20 Tabel Tools ............................................................................................... 37
+Gambar 3.21 Tabel Peminjaman .................................................................................... 38
+Gambar 3.22 Tabel Detail Peminjaman .......................................................................... 39
+Gambar 3.23 Tabel Pengembalian .................................................................................. 40
+Gambar 3.24 Tabel Perpanjangan .................................................................................. 40
+Gambar 3.25 Tabel Detail Perpanjangan ....................................................................... 41
+Gambar 3.26 Laptop HP Aspire 3 ................................................................................. 42
+Gambar 3.27 Logo Visual Studio Code .......................................................................... 43
+Gambar 3.28 Logo Laragon ........................................................................................... 43
+Gambar 3.29 Logo phpMyAdmin .................................................................................. 43
+Gambar 3.30 Logo Laravel ............................................................................................. 43
+Gambar 3.31 Logo Google Chrome ............................................................................... 44
+Gambar 3.32 Logo Tailwind CSS ................................................................................... 44
+Gambar 3.33 Logo Composer ........................................................................................ 44
+Gambar 3.34 Logo PHP 8.5 ........................................................................................... 45
+Gambar 3.35 Menyiapkan dan Menginstal Software Pendukung ................................... 46
+Gambar 3.36 Menjalankan Server Lokal Laragon ......................................................... 46
+Gambar 3.37 Membuka Terminal pada Direktori Kerja ................................................ 47
+Gambar 3.38 Membuat Proyek Baru Laravel ................................................................. 47
+Gambar 3.39 Membuka Folder Proyek di Visual Studio Code ....................................... 48
+Gambar 3.40 Menginstal Dependensi Frontend Menggunakan NPM ............................. 48
+Gambar 3.41 Mengakses Panel Database phpMyAdmin ............................................... 49
+Gambar 3.42 Membuat Basis Data Baru di MySQL ...................................................... 49
+Gambar 3.43 Mengonfigurasi File Lingkungan (.env) ................................................... 50
+Gambar 3.44 Menghubungkan Direktori Storage Publik (Storage Link) ......................... 50
+Gambar 3.45 Membuat Migration Modifikasi Tabel Users ........................................... 51
+Gambar 3.46 Membuat Migration Tabel Master Alat Ukur (tools) ............................... 51
+Gambar 3.47 Membuat Migration Tabel Transaksi Peminjaman (peminjamen) ............. 52
+Gambar 3.48 Membuat Migration Tabel Detail Peminjaman (detail_peminjamen) ....... 52
+Gambar 3.49 Membuat Migration Tabel Pengembalian ................................................ 53
+Gambar 3.50 Menambahkan Kolom Penanganan Perbaikan ......................................... 53
+Gambar 3.51 Menambahkan Kolom Alat Tambahan pada Detail Peminjaman .............. 54
+Gambar 3.52 Membuat Migration Tabel Perpanjangan Waktu Peminjaman ................ 54
+Gambar 3.53 Menjalankan Perintah Migrasi Database ................................................. 55
+Gambar 3.54 Memeriksa Struktur Tabel di phpMyAdmin ............................................ 55
+Gambar 3.55 Membuat Model User dan Relasi Data ..................................................... 56
+Gambar 3.56 Membuat Model Master Tool dan Mutasi Stok ......................................... 56
+Gambar 3.57 Membuat Model Peminjaman dan DetailPeminjaman .............................. 57
+Gambar 3.58 Membuat Model Pengembalian dan Verifikasi Kondisi ........................... 57
+Gambar 3.59 Membuat Seeder Akun Pengguna (UserSeeder) ........................................ 58
+Gambar 3.60 Membuat Seeder Master Data Alat Ukur (ToolSeeder) ............................. 58
+Gambar 3.61 Membuat Model Perpanjangan dan PerpanjanganDetail ........................... 59
+Gambar 3.62 Menjalankan Seeder Database ................................................................. 59
+Gambar 3.63 Membuat Kontroler Autentikasi Pengguna (AuthController) .................... 60
+Gambar 3.64 Membuat Middleware Pembatasan Peran (Role Middleware) ................. 60
+Gambar 3.65 Menyusun Struktur Routing pada routes/web.php .................................... 61
+Gambar 3.66 Merancang Tata Letak Utama Aplikasi (Master Layout) ........................... 61
+Gambar 3.67 Mengonfigurasi Desain Visual Tailwind CSS ........................................... 62
+Gambar 3.68 Membangun Halaman Beranda (Landing Page & Company Profile) ........ 62
+Gambar 3.69 Membangun Halaman Login dan Registrasi Akun ................................... 63
+Gambar 3.70 Membuat Kontroler Pengguna (UserController) ....................................... 63
+Gambar 3.71 Membangun Halaman Dashboard User (Peminjam) ................................. 64
+Gambar 3.72 Membuat Kontroler Transaksi Peminjaman (PeminjamanController) ...... 64
+Gambar 3.73 Membangun Formulir Peminjaman Alat Ukur ......................................... 65
+Gambar 3.74 Membangun Halaman Detail dan Bukti Tanda Terima Peminjaman ......... 65
+Gambar 3.75 Membuat Kontroler Teknisi (TeknisiController) ..................................... 66
+Gambar 3.76 Mengembangkan Fitur Penanganan Alat Baik dan Pengembalian Stok ... 66
+Gambar 3.78 Membuat Kontroler Admin (AdminController) ........................................ 67
+Gambar 3.79 Membuat Kontroler Master Data Alat (ToolController) ........................... 67
+Gambar 3.80 Membuat Kontroler Laporan (ReportController) ..................................... 68
+Gambar 3.81 Membuat Pengujian Otomatis Fitur Teknisi dan Admin .......................... 68
+Gambar 3.82 Menjalankan Pengujian Otomatis Aplikasi (PHPUnit Test) ...................... 69
+Gambar 3.83 Mengompilasi Seluruh Aset CSS dan JavaScript Produksi ....................... 69
+Gambar 3.84 Menjalankan Server Aplikasi di Lingkungan Lokal ................................. 70
+Gambar 3.85 Tampilan Halaman Login ........................................................................ 71
+Gambar 3.86 Tampilan Halaman Registrasi .................................................................. 71
+Gambar 3.87 Tampilan Halaman Beranda ..................................................................... 72
+Gambar 3.88 Tampilan Dashboard Peminjam dan Statistik Status ................................ 72
+Gambar 3.89 Tampilan Formulir Pengajuan Peminjaman Alat Ukur ............................. 73
+Gambar 3.90 Tampilan Detail Peminjaman dan Tanda Terima ..................................... 73
+Gambar 3.91 Tampilan Penambahan Alat Susulan pada Masa Pinjam ........................... 74
+Gambar 3.92 Tampilan Pengajuan Perpanjangan Masa Pinjam ..................................... 74
+Gambar 3.93 Tampilan Konfirmasi Kerusakan oleh User ............................................. 75
+Gambar 3.94 Tampilan Pengaturan Profil Pengguna ..................................................... 75
+Gambar 3.95 Tampilan Dashboard Admin Tool Crib .................................................... 76
+Gambar 3.96 Tampilan Monitoring Transaksi Peminjaman Admin ............................... 76
+Gambar 3.97 Tampilan Detail Transaksi Peminjaman Admin ....................................... 77
+Gambar 3.98 Tampilan Penetapan Keputusan Alat Rusak oleh Admin ......................... 77
+Gambar 3.99 Tampilan Persetujuan Perpanjangan Peminjaman .................................... 78
+Gambar 3.100 Tampilan Kelola Master Data Alat Ukur ................................................ 78
+Gambar 3.101 Tampilan Manajemen Pengguna dan Hak Akses ................................... 79
+Gambar 3.102 Tampilan Rekapitulasi dan Filter Laporan ............................................. 79
+Gambar 3.103 Tampilan Cetak Laporan Peminjaman PDF ........................................... 80
+Gambar 3.104 Tampilan Ekspor Laporan Peminjaman Word ........................................ 80
+Gambar 3.105 Tampilan Dashboard Teknisi ................................................................. 81
+Gambar 3.106 Tampilan Daftar Antrian Pengecekan Alat ............................................. 81
+Gambar 3.107 Tampilan Formulir Uji Kondisi Fisik dan Fungsi Alat ........................... 82
+Gambar 3.108 Tampilan Hasil Pengecekan Kondisi Alat Baik ..................................... 82
+Gambar 3.109 Tampilan Tindakan Perbaikan (Repair) oleh Teknisi ............................. 83
+Gambar 3.110 Tampilan Riwayat Pengecekan Alat Teknisi .......................................... 83
+
+
+--------------------------------------------------------------------------------
+BAGIAN 2: BAB IV PENUTUP
+--------------------------------------------------------------------------------
+
+BAB IV
+PENUTUP
+
+A. Kesimpulan
+
+Berdasarkan kegiatan PKL di PT Vuteq Indonesia, sistem informasi peminjaman dan inspeksi alat ukur presisi Quality Control (QC) berbasis web bernama GaugeHub dengan framework Laravel dan MySQL telah berhasil dibuat sebagai pengganti pencatatan manual berbasis formulir kertas dan spreadsheet. Aplikasi ini berfungsi untuk mengelola katalog alat ukur presisi, memproses pengajuan peminjaman multi-item, penambahan alat susulan, perpanjangan masa pinjam, pemantauan sirkulasi stok secara real-time, hingga ekspor rekapitulasi laporan bulanan dalam format PDF dan Word.
+
+Aplikasi memiliki tiga hak akses, yaitu user untuk melihat ketersediaan stok, mengajukan peminjaman, serta mencetak bukti tanda terima; teknisi untuk menguji kondisi fisik dan kalibrasi alat yang dikembalikan, menangani perbaikan (repair), serta mencatat riwayat inspeksi; dan admin (tool crib) untuk mengelola master data alat, persetujuan perpanjangan pinjam, manajemen akun pengguna, serta penetapan keputusan administratif atas alat yang rusak berat. Pembuatannya dimulai dari persiapan perangkat dan environment, inisialisasi proyek Laravel, perancangan skema basis data (migration dan model), pembuatan sistem autentikasi dan role, perancangan antarmuka, pembuatan kontroler tiap peran, hingga tahap pengujian otomatis dan build aset produksi.
+
+B. Saran
+
+1. Menambahkan fitur pemindai kode batang (barcode) atau QR Code pada fisik alat ukur dan kartu tanda terima.
+   Alasannya, proses serah terima dan identifikasi unit alat ukur di meja tool crib dapat dilakukan lebih cepat dan akurat tanpa perlu mencari atau mengetik kode alat secara manual.
+
+2. Mengintegrasikan sistem notifikasi otomatis melalui WhatsApp Gateway atau email untuk pengingat masa pengembalian.
+   Alasannya, peminjam dapat memperoleh pemberitahuan langsung pada ponsel pribadi saat waktu peminjaman hampir habis, sehingga dapat mencegah keterlambatan pengembalian alat.
+
+3. Memasang aplikasi pada peladen (server) lokal jaringan perusahaan (intranet) serta menerapkan pencadangan (backup) basis data secara otomatis.
+   Alasannya, aplikasi dapat diakses secara bersamaan oleh seluruh karyawan dan teknisi di area pabrik tanpa terbatas pada satu komputer lokal, serta data riwayat alat terlindungi dari risiko kehilangan.
+
+
+--------------------------------------------------------------------------------
+BAGIAN 3: DAFTAR PUSTAKA
+--------------------------------------------------------------------------------
+
+DAFTAR PUSTAKA
+
+Anggraeni, E. Y. dan Irviani, R. 2017. Pengantar Sistem Informasi. Yogyakarta: Andi. Tersedia sebagai buku elektronik di Google Books, https://books.google.co.id/books?id=8V20DwAAQBAJ (diakses pada tanggal 6 November 2026).
+
+A.S., Rosa dan Shalahuddin, M. 2018. Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek (Edisi Revisi). Bandung: Informatika. Tersedia di katalog perpustakaan Universitas Bina Darma, https://perpustakaan.binadarma.ac.id/opac/detail/2394 (diakses pada tanggal 6 November 2026).
+
+Laravel. 2026. Laravel Documentation. https://laravel.com/docs (diakses pada tanggal 6 November 2026).
+
+Oracle. 2026. MySQL 8.0 Reference Manual. https://dev.mysql.com/doc/refman/8.0/en/ (diakses pada tanggal 6 November 2026).
+
+Raharjo, Budi. 2018. Belajar Otodidak Framework Laravel (Edisi Revisi). Bandung: Informatika. Tersedia sebagai buku elektronik di Google Books, https://books.google.co.id/books?id=9d-PDwAAQBAJ (diakses pada tanggal 6 November 2026).
+
+Tailwind Labs. 2026. Tailwind CSS Documentation. https://tailwindcss.com/docs (diakses pada tanggal 6 November 2026).

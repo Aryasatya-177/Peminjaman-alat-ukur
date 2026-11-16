@@ -1,0 +1,19 @@
+BAB IV
+PENUTUP
+
+A. Kesimpulan
+
+Berdasarkan kegiatan PKL di PT Vuteq Indonesia, sistem informasi peminjaman dan inspeksi alat ukur presisi Quality Control (QC) berbasis web bernama GaugeHub dengan framework Laravel dan MySQL telah berhasil dibuat sebagai pengganti pencatatan manual berbasis formulir kertas dan spreadsheet. Aplikasi ini berfungsi untuk mengelola katalog alat ukur presisi, memproses pengajuan peminjaman multi-item, penambahan alat susulan, perpanjangan masa pinjam, pemantauan sirkulasi stok secara real-time, hingga ekspor rekapitulasi laporan bulanan dalam format PDF dan Word.
+
+Aplikasi memiliki tiga hak akses, yaitu user untuk melihat ketersediaan stok, mengajukan peminjaman, serta mencetak bukti tanda terima; teknisi untuk menguji kondisi fisik dan kalibrasi alat yang dikembalikan, menangani perbaikan (repair), serta mencatat riwayat inspeksi; dan admin (tool crib) untuk mengelola master data alat, persetujuan perpanjangan pinjam, manajemen akun pengguna, serta penetapan keputusan administratif atas alat yang rusak berat. Pembuatannya dimulai dari persiapan perangkat dan environment, inisialisasi proyek Laravel, perancangan skema basis data (migration dan model), pembuatan sistem autentikasi dan role, perancangan antarmuka, pembuatan kontroler tiap peran, hingga tahap pengujian otomatis dan build aset produksi.
+
+B. Saran
+
+1. Menambahkan fitur pemindai kode batang (barcode) atau QR Code pada fisik alat ukur dan kartu tanda terima.
+   Alasannya, proses serah terima dan identifikasi unit alat ukur di meja tool crib dapat dilakukan lebih cepat dan akurat tanpa perlu mencari atau mengetik kode alat secara manual.
+
+2. Mengintegrasikan sistem notifikasi otomatis melalui WhatsApp Gateway atau email untuk pengingat masa pengembalian.
+   Alasannya, peminjam dapat memperoleh pemberitahuan langsung pada ponsel pribadi saat waktu peminjaman hampir habis, sehingga dapat mencegah keterlambatan pengembalian alat.
+
+3. Memasang aplikasi pada peladen (server) lokal jaringan perusahaan (intranet) serta menerapkan pencadangan (backup) basis data secara otomatis.
+   Alasannya, aplikasi dapat diakses secara bersamaan oleh seluruh karyawan dan teknisi di area pabrik tanpa terbatas pada satu komputer lokal, serta data riwayat alat terlindungi dari risiko kehilangan.

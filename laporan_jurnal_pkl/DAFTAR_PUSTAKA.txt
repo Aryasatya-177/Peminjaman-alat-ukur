@@ -1,0 +1,13 @@
+DAFTAR PUSTAKA
+
+Anggraeni, E. Y. dan Irviani, R. 2017. Pengantar Sistem Informasi. Yogyakarta: Andi. Tersedia sebagai buku elektronik di Google Books, https://books.google.co.id/books?id=8V20DwAAQBAJ (diakses pada tanggal 6 November 2026).
+
+A.S., Rosa dan Shalahuddin, M. 2018. Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek (Edisi Revisi). Bandung: Informatika. Tersedia di katalog perpustakaan Universitas Bina Darma, https://perpustakaan.binadarma.ac.id/opac/detail/2394 (diakses pada tanggal 6 November 2026).
+
+Laravel. 2026. Laravel Documentation. https://laravel.com/docs (diakses pada tanggal 6 November 2026).
+
+Oracle. 2026. MySQL 8.0 Reference Manual. https://dev.mysql.com/doc/refman/8.0/en/ (diakses pada tanggal 6 November 2026).
+
+Raharjo, Budi. 2018. Belajar Otodidak Framework Laravel (Edisi Revisi). Bandung: Informatika. Tersedia sebagai buku elektronik di Google Books, https://books.google.co.id/books?id=9d-PDwAAQBAJ (diakses pada tanggal 6 November 2026).
+
+Tailwind Labs. 2026. Tailwind CSS Documentation. https://tailwindcss.com/docs (diakses pada tanggal 6 November 2026).
